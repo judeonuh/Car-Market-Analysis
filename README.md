@@ -6,6 +6,7 @@ This project analyzes the Nigeria car market using Microsoft Excel and Power Que
 
 The objective is to provide data-driven insights that support sales strategy, inventory planning, and market expansion decisions for an automotive sales company.
 
+![dashboard](NCM_dashboard.png)  
 
 ## Tools & Technologies
 
