@@ -26,67 +26,38 @@ The dataset consists of 2,873 car listings in the Nigerian auto market with main
 
 ## Data Cleaning & Preprocessing (Power Query)
 
-All data preprocessing was done using Power Query to ensure accuracy and consistency before analysis.
+All data preprocessing was done using Power Query to ensure accuracy and consistency before analysis. Cleaning Steps Performed:
+* Removed 0 Duplicates
+* Records with unpopular Nigeria transmission type were filtered out.
+* Converted price (amount) to numeric.
+* Ensured categorical fields (brand, color, state, transmission) were text.
+* Applied meaningful, analysis-friendly column names.
+* Standardized State names
+* Trimmed & Cleaned Text
 
-🧹 Cleaning Steps Performed
-
-Removed Duplicates
-
-Ensured each car_id was unique.
-
-Handled Missing Values
-
-Blank price fields were removed.
-
-Records with incomplete categorical data were filtered out.
-
-Data Type Standardization
-
-Converted price (amount) to numeric.
-
-Ensured categorical fields (brand, color, state, transmission) were text.
-
-Column Renaming
-
-Applied meaningful, analysis-friendly column names.
-
-Trimmed & Cleaned Text
-
-Removed leading/trailing spaces.
-
-Standardized inconsistent naming (e.g., brand spellings).
-
-Loaded Clean Data
-
-Output was loaded into Excel for pivot analysis.
-
-📊 Analysis & Key Findings
-💰 Average Car Price
-
+## Analysis and Key Findings
+### 1. Average Car Price
 ₦4,986,147 (approx. ₦5M)
 
 Indicates a mid-range dominated market rather than luxury-focused.
 
-🚗 Top Car Brands by Volume
+### 2. Top Car Brands by Volume
 
-The Nigerian car market is driven by affordable, reliable brands.
+The Nigerian car market is driven by affordable, reliable brands like:
+* Toyota (187)
+* Mercedes-Benz (60)
+* Lexus (54)
 
-Brand	Count
-Volkswagen	56
-Acura	56
-Kia	57
+**Insight:** Buyers prioritize durability and maintenance affordability over luxury branding.
 
-Insight: Buyers prioritize durability and maintenance affordability over luxury branding.
+### 3. Top Car Colors
+* Black (116)
+* Grey (89)
+* Silver (81)	
 
-🎨 Top Car Colors
-Color	Count
-Green	100
-Brown	46
-Beige	18
+**Insight:** Neutral and low-maintenance colors dominate consumer preference.
 
-Insight: Neutral and low-maintenance colors dominate consumer preference.
-
-📍 Top States by Car Listings
+### 4. Top States by Car Listings
 State	Count
 Edo	59
 Akwa Ibom	50
